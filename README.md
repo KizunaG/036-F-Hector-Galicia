@@ -3,7 +3,7 @@
 Este proyecto consiste en una aplicación web desarrollada con **React**, **TypeScript** y **Vite**, cuyo objetivo es consumir una API REST y mostrar los datos obtenidos en un formato visual agradable y organizado.  
 Incluye navegación, tarjetas de elementos, paginación y vista detallada mediante un modal.
 
-DESPLEGADO EN VERCEL: https://036-f-hector-galicia-git-master-kizunas-projects-6386d577.vercel.app 
+DESPLEGADO EN VERCEL: [https://036-f-hector-galicia-git-master-kizunas-projects-6386d577.vercel.app ](https://036-f-hector-galicia.vercel.app/)
 
 ---
 
