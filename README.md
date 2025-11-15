@@ -1,73 +1,108 @@
-# React + TypeScript + Vite
+# 📘 Proyecto: Consumo de API con React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto consiste en una aplicación web desarrollada con **React**, **TypeScript** y **Vite**, cuyo objetivo es consumir una API REST y mostrar los datos obtenidos en un formato visual agradable y organizado.  
+Incluye navegación, tarjetas de elementos, paginación y vista detallada mediante un modal.
 
-Currently, two official plugins are available:
+DESPLEGADO EN VERCEL: https://036-f-hector-galicia-git-master-kizunas-projects-6386d577.vercel.app 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Tecnologías Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React**  
+- **TypeScript**  
+- **Vite**  
+- **CSS Modules / Estilos personalizados**  
+- **React Router DOM**  
+- **Fetch API** para consumo de servicios web
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📌 Funcionalidades Principales
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### ✔ Página de Inicio
+- Presentación del proyecto.
+- Información del estudiante.
+- Elementos decorativos e imagen institucional.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### ✔ Página "Acerca de"
+- Breve descripción del proyecto.
+- Tecnologías utilizadas.
+- Diseño limpio y responsivo.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### ✔ Página de Consumo de API
+- Obtención de datos desde una API REST.
+- Visualización de elementos en **tarjetas (cards)**.
+- Se muestran **15+ elementos** por página.
+- Compatibilidad con diferentes APIs (solo cambia la estructura de datos).
+- **Paginación inteligente**.
+- Al seleccionar un elemento:
+  - Se abre un **modal con información detallada**.
+  - Se muestra una imagen, categoría, descripción o instrucciones (dependiendo de la API).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧩 Estructura del Proyecto
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+src/
+├── components/
+│ ├── Navbar.tsx
+│ ├── Hero.tsx
+│ ├── AboutSection.tsx
+│ └── Catalog.tsx
+│
+├── Pages/
+│ ├── HomePage.tsx
+│ ├── AboutPage.tsx
+│ └── CatalogPage.tsx
+│
+├── assets/
+│ └── imágenes y recursos
+│
+├── App.tsx
+├── main.tsx
+├── styles.css
+└── index.css
+
+---
+
+## ⚙️ Instalación y Ejecución en Local
+
+### 1️⃣ Clonar el repositorio
+
+git clone https://github.com/TU-USUARIO/036-F-Hector-Galicia.git
+
+2️⃣ Instalar dependencias
+npm install
+
+3️⃣ Ejecutar en modo desarrollo
+npm run dev
+
+
+El proyecto estará disponible en:
+http://localhost:5173
+
+
+🏗️ Construir para producción
+npm run build
+
+
+☁️ Despliegue
+El proyecto está configurado para ser desplegado en plataformas como:
+
+Vercel
+
+Netlify
+
+Solo se debe indicar:
+
+Build Command: npm run build
+
+Output Directory: dist
+
+👨‍🎓 Datos del Estudiante
+Nombre: Héctor Rodolfo Galicia Albeño
+
+Carnet: 1790-22-4617
+
+Curso: Desarrollo Web
