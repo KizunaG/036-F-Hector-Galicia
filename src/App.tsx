@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar"
 import { Routes, Route } from "react-router-dom"
-import HomePage from "./pages/HomePage"
-import AboutPage from "./pages/AboutPage"
-import CatalogPage from "./pages/CatalogPage"
+import HomePage from "./Pages/HomePage"
+import AboutPage from "./Pages/AboutPage"
+import CatalogPage from "./Pages/CatalogPage"
 
 export default function App() {
   return (
